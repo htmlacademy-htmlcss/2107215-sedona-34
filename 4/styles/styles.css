@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -23,6 +23,7 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -97,7 +98,7 @@ body {
 }
 
 .background-light-gray {
-  background-color: rgba(131, 179, 211, 0.12)
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .background-blue {
@@ -123,14 +124,15 @@ body {
 }
 
 .benefits-numbering,
-.benefits-text{
+.benefits-text {
   text-align: center;
 }
 
 .advantages-text,
 .benefits-text,
 .appointment-text,
-.newsletter-text {
+.newsletter-text-catalog,
+.about-text {
   color: #333333;
   text-align: center;
 }
@@ -144,7 +146,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.newsletter {
+.newsletter-index {
   color:#ffffff;
   text-align: center;
   background-color: rgba(7, 9, 10, 0.377);
@@ -183,9 +185,12 @@ body {
 }
 
 .button-reset {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  color: #FFFFFF;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .select-control-header {
@@ -193,6 +198,13 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color:#333333;
 }
 
 .product-card-link {
@@ -207,8 +219,7 @@ body {
 }
 
 .product-name,
-.product-card-price,
-.select-control {
+.product-card-price {
   color: #333333;
 }
 
@@ -216,6 +227,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  color: #333333;
   background-color: #F2F2F2;
 }
 
@@ -242,5 +254,9 @@ body {
 
 .pagination-current {
   color: #000000;
+  background-color: #F2F2F2;
+}
+
+.newsletter-input {
   background-color: #F2F2F2;
 }
