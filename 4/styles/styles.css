@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -23,7 +23,7 @@ body {
 }
 
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -131,7 +131,7 @@ body {
 .advantages-text,
 .benefits-text,
 .appointment-text,
-.newsletter-text-catalog,
+.newsletter-catalog .newsletter-text,
 .about-text {
   color: #333333;
   text-align: center;
@@ -146,7 +146,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.newsletter-index {
+.newsletter {
   color:#ffffff;
   text-align: center;
   background-color: rgba(7, 9, 10, 0.377);
@@ -185,12 +185,12 @@ body {
 }
 
 .button-reset {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: transparent;
 }
 
 .select-control-header {
@@ -201,7 +201,7 @@ body {
 }
 
 .select-control {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color:#333333;
@@ -258,5 +258,10 @@ body {
 }
 
 .newsletter-input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
   background-color: #F2F2F2;
+  color: #000000;
 }
