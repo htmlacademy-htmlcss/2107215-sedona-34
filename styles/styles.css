@@ -35,14 +35,14 @@ body {
 }
 
 .button-blue {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .navigation-link {
@@ -50,7 +50,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: inherit;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
   text-decoration: none;
 }
@@ -79,12 +79,13 @@ body {
 .about,
 .appointment {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .about-title,
 .appointment-title,
-.newsletter-title {
+.newsletter-title,
+.newsletter-catalog .newsletter-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -92,9 +93,12 @@ body {
 }
 
 .about-text,
-.appointment-text {
+.appointment-text,
+.newsletter-catalog .newsletter-text {
   font-size: 22px;
   line-height: 26px;
+  color:#333333;
+  text-align: center;
 }
 
 .background-light-gray {
@@ -102,7 +106,7 @@ body {
 }
 
 .background-blue {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .background-gray {
@@ -110,7 +114,7 @@ body {
 }
 
 .background-white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .benefits-title,
@@ -129,21 +133,18 @@ body {
 }
 
 .advantages-text,
-.benefits-text,
-.appointment-text,
-.newsletter-catalog .newsletter-text,
-.about-text {
+.benefits-text {
   color: #333333;
   text-align: center;
 }
 
 .text-white {
- color: #FFFFFF;
+ color: #ffffff;
 }
 
 .appointment-title {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .newsletter {
@@ -159,7 +160,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-decoration: none;
 }
 
@@ -189,7 +190,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
 }
 
@@ -228,7 +229,7 @@ body {
   line-height: 20px;
   text-align: center;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .select-control-below {
@@ -248,20 +249,25 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   text-decoration: none;
 }
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .newsletter-input {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.newsletter-catalog {
+  background-image: none;
+  background-color: #ffffff;
   color: #000000;
 }
