@@ -131,7 +131,7 @@ body {
 .advantages-text,
 .benefits-text,
 .appointment-text,
-.newsletter-text-catalog,
+.newsletter-catalog .newsletter-text,
 .about-text {
   color: #333333;
   text-align: center;
@@ -146,7 +146,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.newsletter-index {
+.newsletter {
   color:#ffffff;
   text-align: center;
   background-color: rgba(7, 9, 10, 0.377);
