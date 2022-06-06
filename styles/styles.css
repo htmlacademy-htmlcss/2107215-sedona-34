@@ -14,7 +14,18 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -34,7 +45,8 @@ body {
   text-transform: uppercase;
 }
 
-.button-blue {
+.product-card-button,
+.button-apply {
   background-color: #82b3d3;
 }
 
@@ -45,14 +57,63 @@ body {
   background-color: #82b3d3;
 }
 
+.intro-conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-link-button{
+ margin: 0;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+}
+
+.intro-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-list {
+  width: 490px;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.navigation-user {
+  max-width: 263.87px;
+  margin-left: 137.13px;
+}
+
+.navigation-logo {
+  margin-left: 70px;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  margin-left: 30px;
   color: inherit;
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.about {
+margin: 0;
+padding: 0;
+width: 1200px;
+text-align: center;
 }
 
 .appointment-link {
@@ -64,12 +125,68 @@ body {
   text-transform: uppercase;
 }
 
+.benefits {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-image1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item,
+.benefits-item {
+  width: 400px;
+  list-style: none;
+}
+
+.benefits-item-bridge {
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+
+.benefits-item-city {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap-reverse;
+  flex-direction: column;
+}
+
+.advantages-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .main-index {
+  display: flex;
+  flex-direction: column;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .intro {
+  width: 1200px;
+  height: 485px;
+  margin: 0;
+  padding: 0;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat, no-repeat;
@@ -84,8 +201,7 @@ body {
 
 .about-title,
 .appointment-title,
-.newsletter-title,
-.newsletter-catalog .newsletter-title {
+.newsletter-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -101,20 +217,26 @@ body {
   text-align: center;
 }
 
-.background-light-gray {
+.benefits,
+.advantages-list,
+.advantages-item-food {
+  background-color: #ffffff;
+}
+
+.advantages-item-house,
+.advantages-item-souvenirs,
+.benefits-item-area,
+.benefits-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.background-blue {
+.benefits-item-city,
+.benefits-item-bridge {
   background-color: #82b3d3;
 }
 
-.background-gray {
+.benefits-item-road {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.background-white {
-  background-color: #ffffff;
 }
 
 .benefits-title,
@@ -270,4 +392,35 @@ body {
   background-image: none;
   background-color: #ffffff;
   color: #000000;
+}
+
+.page-footer{
+  width: 1200px;
+}
+.footer-social {
+  display: flex;
+}
+
+.footer-social-list {
+  margin-left: 72px;
+  list-style: none;
+  width: 116px;
+}
+
+.footer-social-item {
+  width: 116px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.footer-contacts-phone {
+ width: 720px;
+ margin-left: 52px;
+ text-align: center;
+}
+
+.htmlacademy-link {
+ margin-left: 53px;
 }
