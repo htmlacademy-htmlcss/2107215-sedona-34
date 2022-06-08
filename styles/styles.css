@@ -14,12 +14,19 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  margin: 0 auto;
+}
+
 body {
+  min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .button {
@@ -34,7 +41,12 @@ body {
   text-transform: uppercase;
 }
 
-.button-blue {
+.product-card-button-second {
+  background-color: #7db54f;
+}
+
+.product-card-button,
+.button-apply {
   background-color: #82b3d3;
 }
 
@@ -45,14 +57,68 @@ body {
   background-color: #82b3d3;
 }
 
+.intro-conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+}
+
+.intro-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-list {
+  width: 490px;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.navigation-user {
+  max-width: 263.87px;
+  margin-left: 137.13px;
+}
+
+.navigation-logo {
+  margin-left: 70px;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  margin-left: 30px;
   color: inherit;
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  box-shadow: 0px, 0px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.about {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  text-align: center;
 }
 
 .appointment-link {
@@ -64,12 +130,66 @@ body {
   text-transform: uppercase;
 }
 
+.benefits {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item,
+.benefits-item {
+  width: 400px;
+  list-style: none;
+}
+
+.benefits-item-container {
+  display: flex;
+ }
+
+.benefits-item-container-second {
+  display: flex;
+  flex-direction: column;
+  padding-left: 95px;
+  padding-right: 85px;
+}
+
+.benefits-image-city {
+  margin-left: auto;
+}
+
+.benefits-item-city,
+.benefits-item-bridge {
+  width: 1200px;
+}
+
+.advantages-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .main-index {
+  display: flex;
+  flex-direction: column;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .intro {
+  width: 1200px;
+  height: 485px;
+  margin: 0;
+  padding: 0;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat, no-repeat;
@@ -84,8 +204,7 @@ body {
 
 .about-title,
 .appointment-title,
-.newsletter-title,
-.newsletter-catalog .newsletter-title {
+.newsletter-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -101,20 +220,26 @@ body {
   text-align: center;
 }
 
-.background-light-gray {
+.benefits,
+.advantages-list,
+.advantages-item-food {
+  background-color: #ffffff;
+}
+
+.advantages-item-house,
+.advantages-item-souvenirs,
+.benefits-item-area,
+.benefits-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.background-blue {
+.benefits-item-city,
+.benefits-item-bridge {
   background-color: #82b3d3;
 }
 
-.background-gray {
+.benefits-item-road {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.background-white {
-  background-color: #ffffff;
 }
 
 .benefits-title,
@@ -156,28 +281,21 @@ body {
   background-position: center;
 }
 
-.footer-contacts-phone {
-  font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
-}
-
 /*catalog*/
-.catalog-columns {
-  color: #ffffff;
-  background-color: rgba(7, 9, 10, 0.377);
-  background-image: url("../images/catalog-background.jpg");
-  background-size: 1200px 393px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
 }
 
 .breadcrumbs-link {
@@ -192,27 +310,46 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: transparent;
+  margin-top: 20px;
 }
 
+/* select-control */
 .select-control-header {
+  width: 338px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-left: 72px;
 }
 
 .select-control {
+  width: 290px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color:#333333;
+  margin-left: 191px;
 }
 
+.select-control-second {
+  width: 160px;
+  margin-left: 51px;
+}
+
+.select-control-below {
+  color: #333333;
+  width: 175px;
+  margin-left: 270px;
+}
+
+/* product */
 .product-card-link {
   text-decoration: none;
 }
 
 .product-card-title {
+  padding-left: 20px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -222,9 +359,39 @@ body {
 .product-name,
 .product-card-price {
   color: #333333;
+  width: 140px;
+}
+
+.product-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-left: 73px;
+  padding-right: 71px;
+}
+
+.product-card-item {
+  width: 340px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.product-card-stars {
+  display: flex;
+  width: 140px;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-rating {
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -232,16 +399,34 @@ body {
   background-color: #f2f2f2;
 }
 
-.select-control-below {
-  color: #333333;
+.product-card-image {
+ padding-left: 20px;
 }
 
 .newsletter-catalog {
   text-align: center;
 }
 
+/* pagination */
+.pagination-container {
+  display: flex;
+}
+
 .pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-left: 73px;
+  list-style: none;
+}
+
+.pagination-item {
+  width: 60px;
+  text-align: center;
+  background-color: #82b3d3;
 }
 
 .pagination-link {
@@ -249,7 +434,6 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #82b3d3;
   text-decoration: none;
 }
 
@@ -259,6 +443,7 @@ body {
 }
 
 .newsletter-input {
+  width: 600px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -270,4 +455,93 @@ body {
   background-image: none;
   background-color: #ffffff;
   color: #000000;
+}
+
+/* footer */
+.page-footer {
+  width: 1200px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social-list {
+  display: flex;
+  width: 142px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+}
+
+.footer-social-item {
+  width: 116px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.footer-contacts-phone {
+  width: 720px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 41.5px;
+}
+
+.htmlacademy-link {
+  margin-right: 70px;
+}
+
+.filters-form {
+  display: flex;
+  list-style: none;
+}
+
+.catalog-columns {
+  color: #ffffff;
+  background-color: rgba(7, 9, 10, 0.377);
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 1200px 393px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* filters-form */
+.filters-form-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filters-form-group {
+  margin: 0;
+  padding: 0;
+}
+
+.filters-form-infrastructure ,
+.filters-form-house {
+  margin-left: 70px;
+}
+
+.filters-form-button {
+  width: 160px;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 533.44px;
+}
+
+.sorting {
+  display: flex;
+  width: 1200px;
+}
+
+.type-of-view-list {
+  width: 160px;
+  margin-right: 78px;
 }
