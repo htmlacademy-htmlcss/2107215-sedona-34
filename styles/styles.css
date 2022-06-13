@@ -575,6 +575,7 @@ img {
   margin-bottom: 8px;
 }
 
+
 .footer-contacts-phone {
   width: 331px;
   display: block;
@@ -589,6 +590,7 @@ img {
 
 .htmlacademy-link {
   margin-left: auto;
+  padding: 10px;
 }
 
 .filters-form {
@@ -662,9 +664,7 @@ img {
   margin-right: 0;
 }
 
-.logo-htmlacademy {
-  padding: 10px;
-}
+
 
 .type-of-view-item {
   width: 48px;
