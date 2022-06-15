@@ -17,6 +17,13 @@
 html {
   height: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -58,6 +65,8 @@ img {
 }
 
 .button {
+  /* width: 140px;
+  height: 37px; */
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -70,12 +79,15 @@ img {
 }
 
 .navigation-link-button {
-  width: 130px;
-  height: 20px;
-  display: block;
+  width: 160px;
+  height: 37px;
+  display: flex;
   margin-top: 14px;
-  padding: 9px 15px 8px 15px;
+  /* padding: 9px 15px 8px 15px; */
   margin-bottom: 14px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .product-card-button-second {
@@ -123,6 +135,7 @@ img {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 490px;
   margin: 0;
   padding: 0;
@@ -175,12 +188,12 @@ img {
 }
 
 .benefits-item {
-  width: 310px;
+  width: 400px;
   padding: 103px 45px 102px;
 }
 
 .advantages-item {
-  width: 310px;
+  width: 400px;
   padding: 80px 45px 81px;
 }
 
@@ -190,7 +203,7 @@ img {
 
 .benefits-item-content-bridge,
 .benefits-item-content {
-  width: 310px;
+  width: 400px;
   padding: 92px 45px;
 }
 
@@ -218,8 +231,7 @@ img {
 }
 
 .intro {
-  padding-top: 51px;
-  padding-bottom: 82px;
+  padding: 51px 45px 82px;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat, no-repeat;
@@ -435,7 +447,7 @@ img {
 }
 
 .product-card-item {
-  width: 300px;
+  width: 340px;
   padding: 20px;
   display: flex;
   flex-direction:  column;
@@ -560,7 +572,7 @@ img {
 
 
 .footer-contacts-phone {
-  width: 331px;
+  width: 361px;
   display: block;
   font-size: 40px;
   line-height: 40px;
@@ -568,7 +580,6 @@ img {
   background-color: #ffffff;
   text-decoration: none;
   text-align: center;
-  padding: 0px 15px 0px;
 }
 
 .htmlacademy-link {
