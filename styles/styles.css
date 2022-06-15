@@ -664,3 +664,81 @@ img {
   margin-right: 8px;
   margin-bottom: 8px;
 }
+
+/* mmodal-window*/
+.modal {
+  width: 715px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 54px 70px 70px;
+}
+
+.modal-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-right: 111px;
+}
+
+.modal-title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.modal-form {
+  margin: 0;
+  display: grid;
+  row-gap: 40px;
+}
+
+.form-label {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.field-group {
+  margin: 0;
+}
+
+.modal-form-container {
+  display: flex;
+}
+
+.field-group-date {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 155px 420px;
+}
+
+.modal-button {
+  width: 53px;
+  height: 53px;
+  margin-left: auto;
+}
+
+.modal-input {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.modal-input-date {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.modal-submit {
+ color: #ffffff;
+ background-color: #83b3d3;
+}

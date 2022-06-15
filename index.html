@@ -160,5 +160,55 @@
         </a>
       </footer>
     </div>
+
+    <section class="modal">
+      <div class="modal-title-wrapper">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <button class="modal-button">
+        <span class="visually-hidden">нопка закрыть окно</span>
+      </button>
+     </div>
+
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group-date modal-form-arrival">
+          <label class="form-label" for="modal-arrival">Дата заезда:</label>
+          <input class="modal-input-date" type="date" id="modal-arrival" name="modal-form-arrival" placeholder="27 апреля 2020">
+        </p>
+
+        <p class="field-group-date modal-form-departure">
+          <label class="form-label" for="modal-departure">Дата выезда:</label>
+          <input class="modal-input-date" type="date" id="modal-departure" name="modal-form-departure" placeholder="1 сентября 2021">
+        </p>
+
+        <div class="modal-form-container">
+          <p class="field-group modal-form-adults">
+            <label class="form-label" for="modal-adults">Взрослые:</label>
+            <button class="info">
+              <span class="visually-hidden">знак минус</span>
+            </button>
+            <input class="modal-input" type="number" id="modal-adults" name="modal-adults" placeholder="2">
+            <button class="booking-parameters">
+              <span class="visually-hidden">знак плюс</span>
+            </button>
+          </p>
+
+          <p class="field-group modal-form-children">
+            <label class="form-label" for="modal-children">Дети:</label>
+            <button class="info">
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+            </button>
+            <button class="booking-parameters">
+              <span class="visually-hidden">знак минус</span>
+            </button>
+              <input class="modal-input" type="number" id="modal-children" name="modal-children" placeholder="1">
+            <button class="booking-parameters">
+              <span class="visually-hidden">знак плюс</span>
+            </button>
+          </p>
+        </div>
+
+        <button class="button modal-submit" type="submit">Найти</button>
+      </form>
+    </section>
   </body>
 </html>
