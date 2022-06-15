@@ -679,7 +679,7 @@ img {
   font-weight: 700;
   padding: 0;
   margin: 0;
-  margin-right: 111px;
+  text-transform: uppercase;
 }
 
 .modal-title-wrapper {
