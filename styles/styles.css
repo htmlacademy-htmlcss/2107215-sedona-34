@@ -64,6 +64,17 @@ img {
   height: auto;
 }
 
+.product-card-image,
+.benefits-image {
+  object-fit: cover;
+}
+
+.logo-htmlacademy,
+.logo,
+.intro-image {
+  object-fit: contain;
+}
+
 .button {
   /* width: 140px;
   height: 37px; */
@@ -83,11 +94,9 @@ img {
   height: 37px;
   display: flex;
   margin-top: 14px;
-  /* padding: 9px 15px 8px 15px; */
   margin-bottom: 14px;
   align-items: center;
   justify-content: center;
-
 }
 
 .product-card-button-second {
@@ -123,6 +132,7 @@ img {
 }
 
 .navigation-logo {
+  width: 139px;
   margin-right: 30px;
 }
 
@@ -201,7 +211,6 @@ img {
   display: flex;
  }
 
-.benefits-item-content-bridge,
 .benefits-item-content {
   width: 400px;
   padding: 92px 45px;
@@ -414,7 +423,6 @@ img {
 }
 
 /* product */
-
 .product-card-link {
   text-decoration: none;
   margin-bottom: 16px;
@@ -435,19 +443,17 @@ img {
 }
 
 .product-list {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   margin: 0;
   padding: 0;
-  padding-left: 73px;
-  padding-right: 71px;
+  column-gap: 18px;
+  padding-left: 72px;
+  padding-right: 72px;
   padding-bottom: 96px;
 }
 
 .product-card-item {
-  width: 340px;
   padding: 20px;
   display: flex;
   flex-direction:  column;
@@ -583,7 +589,6 @@ img {
 }
 
 .htmlacademy-link {
-  display: flex;
   margin-left: auto;
 }
 
