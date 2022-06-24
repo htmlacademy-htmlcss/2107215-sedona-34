@@ -854,7 +854,7 @@ button[disabled] {
   color: #756157;
 }
 
-.htmlacademy-link:focus .htmlacademy-icons
+.htmlacademy-link:focus .htmlacademy-icons,
 .htmlacademy-link:hover .htmlacademy-icons {
  fill: #756157;
 }
