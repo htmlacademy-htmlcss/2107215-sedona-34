@@ -1235,6 +1235,15 @@ img {
 }
 
 .modal-input-date:focus {
-  border: none;
+  background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+}
+
+.modal-input-date:active {
+  outline: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+.modal-input-date:hover {
+  background-color:  #e6e6e6;
 }
