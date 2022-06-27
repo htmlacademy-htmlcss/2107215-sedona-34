@@ -115,11 +115,11 @@ img {
   margin-left: 20px;
 }
 
-a[disabled],
-button[disabled] {
+.button[disabled] {
   background-color: #e5e5e5;
   color: #ffffff;
   border-radius: 4px;
+
 }
 
 .navigation-link-current::before {
@@ -161,14 +161,14 @@ button[disabled] {
   margin-bottom: 20px;
 }
 
-.product-card-button:focus,
-.product-card-button:hover,
+.product-card-button:focus:not(button[disabled]),
+.product-card-button:hover:not(button[disabled]),
 .button-apply:focus,
 .button-apply:hover {
   background-color: #68A2CA;
 }
 
-.product-card-button:active,
+.product-card-button:active:not(button[disabled]),
 .button-apply:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
@@ -181,7 +181,7 @@ button[disabled] {
   line-height: 36px;
   color: #ffffff;
   background-color: #82b3d3;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 .newsletter-button:hover {
@@ -345,7 +345,8 @@ button[disabled] {
 
 .advantages-item {
   width: 400px;
-  padding: 81px 45px 81px;
+  padding: 182px 45px 81px 45px;
+  position: relative;
 }
 
 .benefits-item-wrapper {
@@ -375,24 +376,39 @@ button[disabled] {
   padding: 0;
 }
 
-.advantages-icon-house {
-  padding-top: 102px;
+.advantages-item-house::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  top: 82px;
+  left: 162.5px;
   background-image: url("../images/icons-of-advantage/icon-of-housing.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: center top;
+  background-position: center;
 }
 
-.advantages-icon-food {
-  padding-top: 102px;
+.advantages-item-food::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  top: 82px;
+  left: 162.5px;
   background-image: url("../images/icons-of-advantage/icon-of-eating.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
   background-position: center top;
 }
 
-.advantages-icon-souvenirs {
-  padding-top: 102px;
+.advantages-item-souvenirs::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  top: 82px;
+  left: 162.5px;
   background-image: url("../images/icons-of-advantage/icon-of-souvenirs.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
@@ -477,7 +493,6 @@ button[disabled] {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .benefits-numbering {
@@ -539,12 +554,13 @@ button[disabled] {
 .newsletter-input {
   min-width: 600px;
   min-height: 60px;
+  padding-left: 20px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
   color: #000000;
-  border-radius: 4px 0 0 4px;
+  border-radius: 10px 0 0 10px;
   border: none;
 }
 
@@ -854,12 +870,12 @@ button[disabled] {
   color: #756157;
 }
 
-.htmlacademy-link:focus .htmlacademy-icons,
-.htmlacademy-link:hover .htmlacademy-icons {
+.htmlacademy-link:focus .logo-htmlacademy,
+.htmlacademy-link:hover .logo-htmlacademy {
  fill: #756157;
 }
 
-.htmlacademy-link:active .htmlacademy-icons {
+.htmlacademy-link:active .logo-htmlacademy {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -870,7 +886,7 @@ button[disabled] {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   width: 238px;
   list-style: none;
   margin: 0;
@@ -883,7 +899,6 @@ button[disabled] {
   display: block;
   width: 47px;
   height: 40px;
-  margin-bottom: 8px;
 }
 
 
@@ -902,7 +917,7 @@ button[disabled] {
   margin-left: auto;
 }
 
-.htmlacademy-icons {
+.logo-htmlacademy {
   fill: #000000;
 }
 
@@ -1051,8 +1066,11 @@ button[disabled] {
   font-weight: 700;
 }
 
+.field-group-date,
 .field-group {
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .modal-form-container {
@@ -1060,15 +1078,43 @@ button[disabled] {
 }
 
 .field-group-date {
-  margin: 0;
+  position: relative;
   display: grid;
   grid-template-columns: 155px 420px;
 }
 
-.modal-button {
+.modal-button-close {
+  position: relative;
   width: 53px;
   height: 53px;
   margin-left: auto;
+  border-radius: 50%;
+  border: none;
+  color: #f2f2f2;
+}
+
+.modal-button-close:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-button-close:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-button-close:active {
+  background-color: #e6e6e6;
+}
+
+.modal-close:active {
+  fill-opacity: 0.3;
+}
+
+.modal-close {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  fill: #000000;
 }
 
 .modal-input {
@@ -1078,17 +1124,68 @@ button[disabled] {
   color: #000000;
   text-align: center;
   background-color: #f2f2f2;
+  width: 133px;
+  height: 50px;
+  border: 4px;
+  margin-left: auto;
 }
 
 .modal-input-date {
+  width: 420px;
+  height: 50px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   background-color: #f2f2f2;
+  border: 4px;
+  padding-left: 19px;
+
+}
+
+.field-group-date .form-label::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 18px;
+  right: 18px;
+  background-image: url("../images/calendar.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.modal-form-children {
+  margin-left: auto;
 }
 
 .modal-submit {
- color: #ffffff;
- background-color: #83b3d3;
+  color: #ffffff;
+  background-color: #83b3d3;
+  padding: 12px 255px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.modal-submit:hover,
+.modal-submit:focus {
+  background-color: #68a2ca;
+}
+
+.modal-submit:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-form-adults {
+  width: 288px;
+}
+
+.modal-form-children {
+  min-width: 230px;
+  justify-content: flex-end;
 }
