@@ -383,7 +383,6 @@ img {
   height: 72px;
   top: -102px;
   display: flex;
-  justify-content: center;
   background-image: url("../images/icons-of-advantage/icon-of-housing.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
@@ -397,7 +396,6 @@ img {
   height: 72px;
   top: -102px;
   display: flex;
-  justify-content: center;
   background-image: url("../images/icons-of-advantage/icon-of-eating.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
@@ -411,7 +409,6 @@ img {
   height: 72px;
   top: -102px;
   display: flex;
-  justify-content: center;
   background-image: url("../images/icons-of-advantage/icon-of-souvenirs.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
