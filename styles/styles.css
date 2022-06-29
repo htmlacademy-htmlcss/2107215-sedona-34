@@ -1393,21 +1393,25 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   padding: 10px 17px;
-  border: 2px solid #ffffff;
+  border: solid #ffffff;
 }
 
 .catalog-filter-beginning {
   border-radius: 4px 0 0 4px;
+  border-width: 2px 1px 2px 2px;
+  border-style: solid;
+  border-color: #ffffff;
 }
 
 .catalog-filter-completion {
-  position: relative;
-  left: -2px;
   border-radius: 0 4px 4px 0;
+  border-width: 2px 2px 2px 1px;
+  border-style: solid;
+  border-color: #ffffff;
 }
 
+
 .catalog-filter-label:hover {
-  border: 2px solid #ffffff;
   opacity: 0.6;
 }
 
@@ -1419,20 +1423,6 @@ input::placeholder {
 .catalog-filter-label:active {
   background-color: #756257;
 }
-
-/* .catalog-filter-label::after {
-  content:"";
-  position: absolute;
-  top: 0;
-  right: 50%;
-  width: 2px;
-  height: 100%;
-  background-color: #ffffff;
-}
-
-.catalog-filter-label:last-child::after {
-  content: none;
-} */
 
 .range-input {
   color: #ffffff;
