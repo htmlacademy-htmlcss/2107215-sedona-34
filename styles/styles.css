@@ -109,6 +109,10 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.navigation-item {
+  position: relative;
+}
+
 .navigation-link-button {
   padding: 9px 34px;
   margin-top: 14px;
@@ -954,7 +958,6 @@ input::placeholder {
 /* Mark */
 .control-mark {
   position: absolute;
-  /* top: 2px; */
   left: 0;
   width: 20px;
   height: 20px;
@@ -962,21 +965,30 @@ input::placeholder {
   border-radius: 4px;
 }
 
-.control-mark:hover {
+.control-input:hover + .control-mark {
   opacity: 0.6;
 }
 
-.control-mark:focus {
+.control-input:focus + .control-mark {
   opacity: 0.6;
   outline: 3px solid #83b3d3;
 }
 
-.control-mark:active {
+.control-input:active + .control-mark {
   opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark {
-  border-color: #242424;
+.control-input[type="radio"]:hover ~ .control-mark {
+  opacity: 1;
+}
+
+.control-input[type="radio"]:focus ~ .control-mark {
+  opacity: 1;
+  outline: 3px solid #83b3d3;
+}
+
+.control-input[type="radio"]:active ~ .control-mark {
+  opacity: 1;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -1107,11 +1119,28 @@ input::placeholder {
 }
 
 /* mmodal-window*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
 .modal {
+  position: relative;
   width: 715px;
-  margin: 0 auto;
+  margin: auto;
   background-color: #ffffff;
   padding: 54px 70px 70px;
+  border-radius: 3%;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal-title {
@@ -1410,7 +1439,6 @@ input::placeholder {
   border-color: #ffffff;
 }
 
-
 .catalog-filter-label:hover {
   opacity: 0.6;
 }
@@ -1437,4 +1465,99 @@ input::placeholder {
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.tooltip-toggle {
+  position: absolute;
+  left: 24px;
+  bottom: 29px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  background-color: #7db54f;
+  display: block;
+}
+
+.faforite {
+  position: absolute;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 29px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  background-color: #7db54f;
+  color: #ffffff;
+}
+
+.tooltip-toggle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.tooltip {
+  position: relative;
+  margin-left: 4px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-icon {
+  fill: #ffffff;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  top: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-text:after {
+  content:'';
+  border: 20px solid transparent;
+  border-bottom: 20px solid #333333;
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
