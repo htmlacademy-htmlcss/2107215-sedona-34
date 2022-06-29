@@ -560,10 +560,6 @@ input::placeholder {
   opacity: 0.6;
 }
 
-.newsletter-input:focus:invalid {
-  background-color: #ea5454;
-}
-
 .newsletter-input {
   width: 600px;
   padding: 20px 22px;
@@ -1348,6 +1344,26 @@ input::placeholder {
 
 .modal-input-date:hover {
   background-color:  #e6e6e6;
+}
+
+.modal-validation-arrival {
+  position: absolute;
+  left: 155px;
+  top: 60px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #ff5757;
+}
+
+.modal-validation-departure {
+  position: absolute;
+  left: 155px;
+  top: 60px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
 }
 
 /* Range */
