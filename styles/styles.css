@@ -1454,9 +1454,8 @@ input::placeholder {
 
 .range-input {
   color: #ffffff;
-  width: 30px;
+  width: 44px;
   font: inherit;
-  text-align: center;
   background-color: transparent;
   border: none;
 }
