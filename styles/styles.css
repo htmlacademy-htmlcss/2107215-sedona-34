@@ -497,7 +497,8 @@ img {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .benefits-numbering {
@@ -520,6 +521,7 @@ img {
 .appointment-title {
   text-align: center;
   background-color: #ffffff;
+  margin-bottom: 30px;
 }
 /* newsletter */
 .newsletter {
@@ -532,7 +534,7 @@ img {
   padding: 94px 45px;
 }
 
-.newsletter-catalog .newsletter-text {
+.newsletter-catalog {
   font-size: 22px;
   line-height: 26px;
   color:#333333;
@@ -540,6 +542,8 @@ img {
 }
 
 .newsletter-text {
+  font-size: 22px;
+  line-height: 26px;
   margin: 0;
   margin-bottom: 46px;
 }
@@ -656,7 +660,10 @@ input::placeholder {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  padding: 14px 105px 14px 20px;
+  padding: 14px 20px;
+  padding-right: 40px;
+  width: 290px;
+  height: 49px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -669,6 +676,7 @@ input::placeholder {
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: center right 20px;
+  background-color: #ffffff;
 }
 
 .select-control::-ms-expand {
@@ -703,6 +711,10 @@ input::placeholder {
   order: -1;
 }
 
+.product-card-image {
+  display: block;
+}
+
 /* product */
 .product-card-link {
   text-decoration: none;
@@ -731,7 +743,7 @@ input::placeholder {
   column-gap: 18px;
   padding-left: 72px;
   padding-right: 72px;
-  padding-bottom: 66px;
+  padding-bottom: 58px;
 }
 
 .divider {
@@ -773,17 +785,19 @@ input::placeholder {
   list-style-type: none;
   padding-top: 9px;
   padding-bottom: 9px;
+  gap: 6px;
 
 }
 
 .product-card-rating {
-  padding: 9px 28px;
+  padding: 9px 23px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #333333;
   background-color: #f2f2f2;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 /* pagination */
@@ -824,6 +838,7 @@ input::placeholder {
   background-color: #82b3d3;
   text-decoration: none;
   text-align: center;
+  border-radius: 4px;
 }
 
 .pagination-link:hover:not(.pagination-current)  {
@@ -848,7 +863,7 @@ input::placeholder {
 .page-footer {
   display: flex;
   flex-wrap: wrap;
-  padding: 35px 70px 25px;
+  padding: 41px 70px 30px;
   align-items: center;
 }
 
@@ -900,7 +915,7 @@ input::placeholder {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 140.5px;
+  margin-right: 126px;
 }
 
 .footer-social-link {
@@ -924,6 +939,8 @@ input::placeholder {
 
 .htmlacademy-link {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logo-htmlacademy {
@@ -1038,6 +1055,8 @@ input::placeholder {
 .filters-form-title {
   padding: 0;
   margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .filters-form-item {
@@ -1059,7 +1078,8 @@ input::placeholder {
 
 .sorting-container {
   display: flex;
-  padding: 50px 71px 56px 72px;
+  padding: 53px 72px 57px 72px;
+  align-items: center;
 }
 
 .type-of-view-list {
@@ -1367,7 +1387,9 @@ input::placeholder {
 }
 
 .catalog-filter-title {
- margin-bottom: 34px;
+  margin-bottom: 34px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .range-scale {
@@ -1423,7 +1445,7 @@ input::placeholder {
   position: relative;
   display: flex;
   min-width: 288px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-label {
@@ -1463,7 +1485,7 @@ input::placeholder {
 
 .range-input {
   color: #ffffff;
-  width: 75px;
+  width: 80px;
   font: inherit;
   background-color: transparent;
   border: none;
