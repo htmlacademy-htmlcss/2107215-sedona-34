@@ -1131,7 +1131,7 @@ input::placeholder {
   margin: auto;
   background-color: #ffffff;
   padding: 54px 70px 70px;
-  border-radius: 3%;
+  border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
