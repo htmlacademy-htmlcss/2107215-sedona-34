@@ -521,7 +521,8 @@ img {
 .appointment-title {
   text-align: center;
   background-color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+
 }
 /* newsletter */
 .newsletter {
@@ -676,7 +677,7 @@ input::placeholder {
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: center right 20px;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .select-control::-ms-expand {
