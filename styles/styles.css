@@ -1159,7 +1159,7 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
 }
 
 .modal-form {
@@ -1256,8 +1256,9 @@ input::placeholder {
 
 .modal-form-calendar-button {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 50%;
+  margin-top: -7px;
+  right: 13px;
   opacity: 0.3;
   cursor: pointer;
   border: none;
@@ -1289,7 +1290,7 @@ input::placeholder {
 }
 
 .modal-submit:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1369,6 +1370,7 @@ input::placeholder {
   margin: 0;
   padding: 0;
   border: none;
+  width: 288px;
 }
 
 .catalog-filter-title {
@@ -1387,6 +1389,7 @@ input::placeholder {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
+  width: 235px;
 }
 
 .range-toggle {
@@ -1510,6 +1513,7 @@ input::placeholder {
   border: none;
   padding: 0;
   margin: 0;
+  letter-spacing: -0.1em;
   border-radius: 50%;
   background-color: #7db54f;
   color: #ffffff;
@@ -1531,7 +1535,7 @@ input::placeholder {
 
 .tooltip {
   position: relative;
-  margin-left: 4px;
+  margin-left: 6px;
   width: 25px;
   height: 25px;
 }
@@ -1551,7 +1555,7 @@ input::placeholder {
   border-radius: 10px;
   width: 256px;
   position: absolute;
-  top: 51px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1559,9 +1563,9 @@ input::placeholder {
 }
 
 .tooltip-text:after {
-  content:'';
-  border: 20px solid transparent;
-  border-bottom: 20px solid #333333;
+  content:"";
+  border: 10px solid transparent;
+  border-bottom: 9px solid #333333;
   width: 19px;
   height: 9px;
   position: absolute;
