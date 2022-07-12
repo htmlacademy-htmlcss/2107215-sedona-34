@@ -994,23 +994,23 @@ input::placeholder {
   opacity: 0.3;
 }
 
-.control-input[type="radio"]:hover ~ .control-mark:not(.control-input:disabled + .control-mark) {
+.control-input[type="radio"]:hover ~ .control-mark:not(.control-input:disabled + .control-mark)  {
   opacity: 1;
 }
 
-.control-input[type="radio"]:focus ~ .control-mark:not(.control-input:disabled + .control-mark) {
+.control-input[type="radio"]:focus ~ .control-mark:not(.control-input:disabled + .control-mark)  {
   opacity: 1;
   outline: 3px solid #83b3d3;
 }
 
-.control-input[type="radio"]:active ~ .control-mark:not(.control-input:disabled + .control-mark) {
+.control-input[type="radio"]:active ~ .control-mark:not(.control-input:disabled + .control-mark)  {
   opacity: 1;
 }
 
 .control-input:disabled + .control-mark {
   background-color: #e5e5e5;
   color: #ffffff;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
